@@ -1,0 +1,24 @@
+.lodging-article{
+    width:100%;
+}
+.lodging-article:hover{
+    cursor: pointer;
+}
+
+.article-contents {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.article-contents > span {
+    color:#717171;
+}
+
+.rate{
+    position: absolute;
+    top:0px;
+    right:0px;
+    display: flex;
+    align-items: center;
+}

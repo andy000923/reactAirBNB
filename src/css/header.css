@@ -1,0 +1,133 @@
+#main-page{
+    height: 50px;
+  }
+  .main-navi{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    border-bottom:1px solid #cccccc;
+  }
+  
+  .main-navi .logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .main-navi .logo i { 
+    font-size: 40px;
+    position: relative;
+    top: 6px;
+  }
+  .main-navi .logo a {
+    text-decoration: none;
+    color: rgb(255, 56, 92);
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 7px;
+    /* padding: 10px 0px; */
+  }
+  .main-navi .search .button {
+    height: 48px;
+    width: 300px;
+    border-radius: 30px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    outline: none;
+  }
+  .main-navi .search .button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  }
+  .main-navi .search .button .rButton {
+    background-color:rgb(255, 56, 92); 
+    color: white;
+    border-radius: 50%;
+    padding: 5px 7px;
+  }
+  .main-navi .search .button .rButton i {
+    font-size: 10px;
+  }
+  
+  .main-navi .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-navi .menu .item {
+    margin: 0 5px;
+    padding: 7px;
+  }
+  .main-navi .menu .item:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+  }
+  .main-navi .menu button{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+  }
+  .main-navi .menu .item i{
+    padding: 0 3px;
+  }
+  .main-navi .menu button.item:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  }
+  
+  .memberInfoContainer>div{
+    display:flex;
+    flex-direction: column;
+}
+.memberInfoContainer>div>button{
+    all:unset;
+    padding: 16px;
+}
+.memberInfoContainer>div>button:hover{
+    background-color: #eeeeee;
+}
+  @media (max-width: 650px){
+    #main {
+      padding:0px 80px;
+      display:grid;
+      grid-template-columns: repeat(1,1fr);
+      column-gap: 20px;
+      row-gap:40px;
+    }
+    #main-page .main-navi .logo a{
+      display: none;
+    }
+    #main-page .main-navi .menu{
+      display: none;
+    }
+    #main-page .main-navi .search .button{
+      display: none;
+    }
+    #main-page .main-navi .search1 .button{
+      display: flex;
+      width: 350px;
+    }
+  }
+  .main-navi .search1 .button {
+    height: 48px;
+    width: 500px;
+    border-radius: 30px;
+    padding: 0 15px;
+    display: none;
+    column-gap: 10px;
+    align-items: center;
+    left: 50%;
+    transform: translateX(0%);
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    outline: none;
+    box-shadow: 0px 2px 3px grey;
+  }
